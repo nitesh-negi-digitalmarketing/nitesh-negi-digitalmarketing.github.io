@@ -1,324 +1,1203 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Nitesh Negi - Digital Marketing Executive, SEO Specialist and WordPress Website Developer. Explore professional experience, projects, skills and certifications.">
-  <meta name="theme-color" content="#0b1220">
-  <meta property="og:title" content="Nitesh Negi | Digital Marketing Portfolio">
-  <meta property="og:description" content="Digital Marketing Executive | SEO Specialist | WordPress Website Specialist">
-  <meta property="og:type" content="website">
-  <title>Nitesh Negi | Digital Marketing Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#0b1220;--panel:#111c2e;--panel2:#142238;--text:#edf4f6;
-      --muted:#a5b4c5;--mint:#a8e6cf;--mint2:#67c9aa;--line:rgba(207,226,235,.13);
-      --white:#fff;--shadow:0 22px 60px rgba(0,0,0,.24);--radius:22px;
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth;scroll-padding-top:90px}
-    body{margin:0;background:radial-gradient(circle at 80% 0%,rgba(103,201,170,.10),transparent 28%),var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.65}
-    a{color:inherit;text-decoration:none}
-    button{font:inherit}
-    .container{width:min(1120px,calc(100% - 40px));margin:auto}
-    .nav-wrap{position:sticky;top:0;z-index:50;background:rgba(11,18,32,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-    nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .brand{display:flex;align-items:center;gap:11px;font-family:Manrope,sans-serif;font-weight:800;letter-spacing:-.4px}
-    .brand-mark{width:39px;height:39px;border-radius:12px;background:var(--mint);color:#0b1822;display:grid;place-items:center;font-weight:800}
-    .nav-links{display:flex;align-items:center;gap:25px;color:var(--muted);font-size:13px;font-weight:600}
-    .nav-links a:hover{color:var(--mint)}
-    .nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 18px;border-radius:999px;background:var(--mint);color:#0b1822;font-weight:800;font-size:13px;border:1px solid var(--mint);transition:.2s}
-    .nav-cta:hover,.btn:hover{transform:translateY(-2px);background:#c2f3df}
-    .btn.secondary{background:transparent;color:var(--text);border-color:var(--line)}
-    .btn.secondary:hover{border-color:var(--mint);color:var(--mint)}
-    .menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--text);border-radius:10px;padding:8px 12px}
-    .hero{padding:92px 0 80px;position:relative;overflow:hidden}
-    .hero-grid{display:grid;grid-template-columns:1.3fr .7fr;align-items:center;gap:55px}
-    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--mint);font-size:12px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase}
-    .pulse{width:8px;height:8px;background:var(--mint);border-radius:50%;box-shadow:0 0 0 6px rgba(168,230,207,.12)}
-    h1,h2,h3,h4{font-family:Manrope,sans-serif;line-height:1.2}
-    h1{font-size:clamp(42px,6vw,70px);letter-spacing:-2.8px;margin:22px 0 18px}
-    h1 span{color:var(--mint)}
-    .hero-copy{font-size:17px;color:var(--muted);max-width:670px;margin:0 0 28px}
-    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-    .hero-tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:32px}
-    .tag{border:1px solid var(--line);border-radius:999px;padding:7px 12px;color:#c8d5df;font-size:12px;background:rgba(255,255,255,.025)}
-    .profile-card{position:relative;padding:30px;border:1px solid rgba(168,230,207,.23);border-radius:28px;background:linear-gradient(145deg,rgba(168,230,207,.12),rgba(17,28,46,.92) 48%);box-shadow:var(--shadow)}
-    .avatar{width:116px;height:116px;border-radius:28px;overflow:hidden;background:linear-gradient(135deg,#a8e6cf,#4b9f89);color:#10221f;display:grid;place-items:center;font:800 38px Manrope;margin-bottom:22px;border:2px solid rgba(168,230,207,.55);box-shadow:0 12px 35px rgba(0,0,0,.28)}
-    .avatar img{width:100%;height:100%;object-fit:cover;object-position:center 35%;display:block}
-    .profile-card h3{font-size:22px;margin:0 0 5px}
-    .profile-card p{color:var(--muted);font-size:13px;margin:0}
-    .profile-line{height:1px;background:var(--line);margin:22px 0}
-    .mini-stat{display:flex;justify-content:space-between;gap:12px;font-size:13px;margin:11px 0;color:var(--muted)}
-    .mini-stat strong{color:var(--text);text-align:right}
-    .floating-note{position:absolute;right:-18px;bottom:28px;background:#e9fff5;color:#10221f;border-radius:15px;padding:12px 15px;font-size:12px;font-weight:800;box-shadow:var(--shadow)}
-    .section{padding:76px 0;border-top:1px solid var(--line)}
-    .section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:32px}
-    .kicker{color:var(--mint);font-size:11px;font-weight:800;letter-spacing:1.7px;text-transform:uppercase}
-    h2{font-size:clamp(28px,4vw,40px);letter-spacing:-1.2px;margin:8px 0 0}
-    .section-intro{max-width:500px;color:var(--muted);font-size:14px;margin:0}
-    .about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px}
-    .card{background:linear-gradient(145deg,rgba(20,34,56,.95),rgba(17,28,46,.92));border:1px solid var(--line);border-radius:var(--radius);padding:25px}
-    .card p{color:var(--muted);margin:0 0 12px;font-size:14px}
-    .focus-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    .focus-item{padding:13px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.025);font-size:13px;color:#dbe7eb}
-    .focus-item span{margin-right:8px}
-    .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .skill-card h3{font-size:16px;margin:0 0 15px}
-    .skill-card p{margin:0;color:var(--muted);font-size:13px}
-    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
-    .chip{font-size:11px;color:#d9e7e8;background:rgba(168,230,207,.07);border:1px solid rgba(168,230,207,.16);padding:6px 9px;border-radius:7px}
-    .tools-group{margin:22px 0 0}
-    .tools-group h3{font-size:14px;color:#dce9ec;margin-bottom:12px}
-    .tool-badges{display:flex;flex-wrap:wrap;gap:8px}
-    .tool-badge{border:1px solid var(--line);background:#101d30;border-radius:9px;padding:8px 11px;font-size:12px;color:#dce8ed}
-    .experience{display:grid;gap:17px}
-    .experience-card{position:relative;padding-left:28px}
-    .experience-card:before{content:"";position:absolute;left:0;top:7px;width:10px;height:10px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 5px rgba(168,230,207,.12)}
-    .experience-card:after{content:"";position:absolute;left:4px;top:24px;bottom:-20px;width:1px;background:var(--line)}
-    .experience-card:last-child:after{display:none}
-    .exp-top{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-    .exp-top h3{font-size:19px;margin:0}
-    .exp-company{color:var(--mint);font-weight:700;font-size:13px;margin-top:5px}
-    .exp-date{color:var(--muted);font-size:12px}
-    .experience-card p{color:var(--muted);font-size:13px;margin:12px 0}
-    .experience-card ul{margin:8px 0 0;padding-left:18px;color:#c5d3dc;font-size:13px;columns:2;column-gap:28px}
-    .experience-card li{margin:5px 0;break-inside:avoid}
-    .work-sites{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
-    .work-sites a{font-size:11px;border:1px solid rgba(168,230,207,.22);color:var(--mint);padding:6px 9px;border-radius:7px}
-    .project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}
-    .project-card{display:flex;flex-direction:column;min-height:260px}
-    .project-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:15px}
-    .project-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:13px;background:rgba(168,230,207,.11);font-size:20px}
-    .project-type{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--mint);font-weight:800}
-    .project-card h3{font-size:20px;margin:0 0 8px}
-    .project-card p{font-size:13px;color:var(--muted);margin:0 0 14px}
-    .project-work{font-size:12px;color:#d9e5e8;margin-bottom:18px}
-    .project-link{margin-top:auto;color:var(--mint);font-size:12px;font-weight:800}
-    .project-link:hover{text-decoration:underline}
-    .cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
-    .cert-card h3{font-size:16px;margin:0 0 7px}
-    .cert-card .issuer{color:var(--mint);font-size:12px;font-weight:700}
-    .cert-card p{font-size:12px;color:var(--muted);margin:10px 0 0}
-    .cert-meta{font-size:11px;color:#91a5b8;margin-top:9px}
-    .contact-box{display:grid;grid-template-columns:1.1fr .9fr;gap:25px;align-items:center;background:linear-gradient(120deg,rgba(168,230,207,.13),rgba(17,28,46,.96) 60%);border:1px solid rgba(168,230,207,.2);border-radius:28px;padding:35px}
-    .contact-box h2{margin:8px 0 12px}
-    .contact-box p{color:var(--muted);font-size:14px;margin:0}
-    .contact-links{display:grid;gap:10px}
-    .contact-link{padding:13px 15px;border:1px solid var(--line);border-radius:12px;background:rgba(5,12,22,.24);font-size:13px}
-    .contact-link span{color:var(--mint);margin-right:8px}
-    footer{padding:28px 0;color:#8294a7;font-size:12px;text-align:center}
-    .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
-    .reveal.visible{opacity:1;transform:none}
-    @media(max-width:850px){
-      .hero-grid,.about-grid,.contact-box{grid-template-columns:1fr}
-      .profile-card{max-width:440px}
-      .skills-grid{grid-template-columns:repeat(2,1fr)}
-      .nav-links{gap:13px}
-      .nav-cta{display:none}
-    }
-    @media(max-width:620px){
-      .container{width:min(100% - 30px,1120px)}
-      nav{height:66px}
-      .menu-btn{display:block}
-      .nav-links{display:none;position:absolute;top:66px;left:0;right:0;padding:18px 22px 22px;background:#0d1727;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}
-      .nav-links.open{display:flex}
-      .hero{padding:65px 0 55px}
-      h1{letter-spacing:-1.7px}
-      .hero-copy{font-size:15px}
-      .section{padding:58px 0}
-      .section-head{display:block}
-      .section-intro{margin-top:12px}
-      .focus-list,.skills-grid,.project-grid,.cert-grid{grid-template-columns:1fr}
-      .experience-card ul{columns:1}
-      .contact-box{padding:24px}
-      .floating-note{right:8px}
-    }
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Nitesh Negi - Digital Marketing Executive, SEO Specialist and WordPress Website Developer.">
+<meta name="theme-color" content="#0b1220">
+<meta property="og:title" content="Nitesh Negi | Digital Marketing Portfolio">
+<meta property="og:description" content="Digital Marketing Executive | SEO Specialist | WordPress Developer">
+<meta property="og:type" content="website">
+
+<title>Nitesh Negi | Digital Marketing Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+--bg:#0b1220;
+--panel:#111c2e;
+--panel2:#142238;
+--text:#edf4f6;
+--muted:#a5b4c5;
+--mint:#a8e6cf;
+--mint2:#67c9aa;
+--line:rgba(207,226,235,.13);
+--shadow:0 22px 60px rgba(0,0,0,.24);
+--radius:22px;
+}
+
+* { box-sizing:border-box; }
+
+html {
+scroll-behavior:smooth;
+scroll-padding-top:90px;
+}
+
+body {
+margin:0;
+background:radial-gradient(circle at 80% 0%,rgba(103,201,170,.10),transparent 28%),var(--bg);
+color:var(--text);
+font-family:"DM Sans",sans-serif;
+line-height:1.65;
+}
+
+a { color:inherit;text-decoration:none; }
+button { font:inherit; }
+
+.container {
+width:min(1120px,calc(100% - 40px));
+margin:auto;
+}
+
+.nav-wrap {
+position:sticky;
+top:0;
+z-index:50;
+background:rgba(11,18,32,.94);
+backdrop-filter:blur(16px);
+border-bottom:1px solid var(--line);
+}
+
+nav {
+height:76px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:24px;
+}
+
+.brand {
+display:flex;
+align-items:center;
+gap:11px;
+font-family:Manrope,sans-serif;
+font-weight:800;
+}
+
+.brand-mark {
+width:39px;
+height:39px;
+border-radius:12px;
+background:var(--mint);
+color:#0b1822;
+display:grid;
+place-items:center;
+}
+
+.nav-links {
+display:flex;
+align-items:center;
+gap:25px;
+color:var(--muted);
+font-size:13px;
+font-weight:600;
+}
+
+.nav-links a:hover { color:var(--mint); }
+
+.nav-cta,.btn {
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:9px;
+padding:12px 18px;
+border-radius:999px;
+background:var(--mint);
+color:#0b1822;
+font-weight:800;
+font-size:13px;
+border:1px solid var(--mint);
+transition:.2s;
+}
+
+.nav-cta:hover,.btn:hover {
+transform:translateY(-2px);
+background:#c2f3df;
+}
+
+.btn.secondary {
+background:transparent;
+color:var(--text);
+border-color:var(--line);
+}
+
+.btn.secondary:hover {
+border-color:var(--mint);
+color:var(--mint);
+}
+
+.menu-btn {
+display:none;
+background:none;
+border:1px solid var(--line);
+color:var(--text);
+border-radius:10px;
+padding:8px 12px;
+}
+
+.hero {
+padding:92px 0 80px;
+position:relative;
+overflow:hidden;
+}
+
+.hero-grid {
+display:grid;
+grid-template-columns:1.3fr .7fr;
+align-items:center;
+gap:55px;
+}
+
+.eyebrow {
+display:inline-flex;
+align-items:center;
+gap:9px;
+color:var(--mint);
+font-size:12px;
+font-weight:800;
+letter-spacing:1.8px;
+text-transform:uppercase;
+}
+
+.pulse {
+width:8px;
+height:8px;
+background:var(--mint);
+border-radius:50%;
+box-shadow:0 0 0 6px rgba(168,230,207,.12);
+}
+
+h1,h2,h3,h4 {
+font-family:Manrope,sans-serif;
+line-height:1.2;
+}
+
+h1 {
+font-size:clamp(42px,6vw,70px);
+letter-spacing:-2.8px;
+margin:22px 0 18px;
+}
+
+h1 span { color:var(--mint); }
+
+.hero-copy {
+font-size:17px;
+color:var(--muted);
+max-width:670px;
+margin:0 0 28px;
+}
+
+.hero-actions {
+display:flex;
+gap:12px;
+flex-wrap:wrap;
+}
+
+.hero-tags {
+display:flex;
+gap:9px;
+flex-wrap:wrap;
+margin-top:32px;
+}
+
+.tag {
+border:1px solid var(--line);
+border-radius:999px;
+padding:7px 12px;
+color:#c8d5df;
+font-size:12px;
+background:rgba(255,255,255,.025);
+}
+
+.profile-card {
+position:relative;
+padding:30px;
+border:1px solid rgba(168,230,207,.23);
+border-radius:28px;
+background:linear-gradient(145deg,rgba(168,230,207,.12),rgba(17,28,46,.92) 48%);
+box-shadow:var(--shadow);
+}
+
+.avatar {
+width:116px;
+height:116px;
+border-radius:28px;
+overflow:hidden;
+background:linear-gradient(135deg,#a8e6cf,#4b9f89);
+color:#10221f;
+display:grid;
+place-items:center;
+font:800 38px Manrope;
+margin-bottom:22px;
+border:2px solid rgba(168,230,207,.55);
+box-shadow:0 12px 35px rgba(0,0,0,.28);
+}
+
+.avatar img {
+width:100%;
+height:100%;
+object-fit:cover;
+object-position:center 35%;
+display:block;
+}
+
+.avatar-fallback {
+display:none;
+font-size:38px;
+font-weight:800;
+}
+
+.profile-card h3 {
+font-size:22px;
+margin:0 0 5px;
+}
+
+.profile-card p {
+color:var(--muted);
+font-size:13px;
+margin:0;
+}
+
+.profile-line {
+height:1px;
+background:var(--line);
+margin:22px 0;
+}
+
+.mini-stat {
+display:flex;
+justify-content:space-between;
+gap:12px;
+font-size:13px;
+margin:11px 0;
+color:var(--muted);
+}
+
+.mini-stat strong {
+color:var(--text);
+text-align:right;
+}
+
+.floating-note {
+position:absolute;
+right:-18px;
+bottom:28px;
+background:#e9fff5;
+color:#10221f;
+border-radius:15px;
+padding:12px 15px;
+font-size:12px;
+font-weight:800;
+box-shadow:var(--shadow);
+}
+
+.section {
+padding:76px 0;
+border-top:1px solid var(--line);
+}
+
+.section-head {
+display:flex;
+justify-content:space-between;
+align-items:end;
+gap:25px;
+margin-bottom:32px;
+}
+
+.kicker {
+color:var(--mint);
+font-size:11px;
+font-weight:800;
+letter-spacing:1.7px;
+text-transform:uppercase;
+}
+
+h2 {
+font-size:clamp(28px,4vw,40px);
+letter-spacing:-1.2px;
+margin:8px 0 0;
+}
+
+.section-intro {
+max-width:500px;
+color:var(--muted);
+font-size:14px;
+margin:0;
+}
+
+.about-grid {
+display:grid;
+grid-template-columns:1.15fr .85fr;
+gap:22px;
+}
+
+.card {
+background:linear-gradient(145deg,rgba(20,34,56,.95),rgba(17,28,46,.92));
+border:1px solid var(--line);
+border-radius:var(--radius);
+padding:25px;
+}
+
+.card p {
+color:var(--muted);
+margin:0 0 12px;
+font-size:14px;
+}
+
+.focus-list {
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+.focus-item {
+padding:13px;
+border:1px solid var(--line);
+border-radius:13px;
+background:rgba(255,255,255,.025);
+font-size:13px;
+color:#dbe7eb;
+}
+
+.focus-item span { margin-right:8px; }
+
+.skills-grid {
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:16px;
+}
+
+.skill-card h3 {
+font-size:16px;
+margin:0 0 15px;
+}
+
+.skill-card p {
+margin:0;
+color:var(--muted);
+font-size:13px;
+}
+
+.chips {
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+margin-top:15px;
+}
+
+.chip {
+font-size:11px;
+color:#d9e7e8;
+background:rgba(168,230,207,.07);
+border:1px solid rgba(168,230,207,.16);
+padding:6px 9px;
+border-radius:7px;
+}
+
+.tools-group { margin:22px 0 0; }
+
+.tools-group h3 {
+font-size:14px;
+color:#dce9ec;
+margin-bottom:12px;
+}
+
+.tool-badges {
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+}
+
+.tool-badge {
+border:1px solid var(--line);
+background:#101d30;
+border-radius:9px;
+padding:8px 11px;
+font-size:12px;
+color:#dce8ed;
+}
+
+.experience { display:grid;gap:17px; }
+
+.experience-card {
+position:relative;
+padding-left:28px;
+}
+
+.experience-card:before {
+content:"";
+position:absolute;
+left:0;
+top:7px;
+width:10px;
+height:10px;
+border-radius:50%;
+background:var(--mint);
+box-shadow:0 0 0 5px rgba(168,230,207,.12);
+}
+
+.experience-card:after {
+content:"";
+position:absolute;
+left:4px;
+top:24px;
+bottom:-20px;
+width:1px;
+background:var(--line);
+}
+
+.experience-card:last-child:after { display:none; }
+
+.exp-top {
+display:flex;
+justify-content:space-between;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.exp-top h3 {
+font-size:19px;
+margin:0;
+}
+
+.exp-company {
+color:var(--mint);
+font-weight:700;
+font-size:13px;
+margin-top:5px;
+}
+
+.exp-date {
+color:var(--muted);
+font-size:12px;
+}
+
+.experience-card p {
+color:var(--muted);
+font-size:13px;
+margin:12px 0;
+}
+
+.experience-card ul {
+margin:8px 0 0;
+padding-left:18px;
+color:#c5d3dc;
+font-size:13px;
+columns:2;
+column-gap:28px;
+}
+
+.experience-card li {
+margin:5px 0;
+break-inside:avoid;
+}
+
+.work-sites {
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+margin-top:14px;
+}
+
+.work-sites a {
+font-size:11px;
+border:1px solid rgba(168,230,207,.22);
+color:var(--mint);
+padding:6px 9px;
+border-radius:7px;
+}
+
+.project-grid {
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:17px;
+}
+
+.project-card {
+display:flex;
+flex-direction:column;
+min-height:260px;
+}
+
+.project-top {
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:12px;
+margin-bottom:15px;
+}
+
+.project-icon {
+width:42px;
+height:42px;
+display:grid;
+place-items:center;
+border-radius:13px;
+background:rgba(168,230,207,.11);
+font-size:20px;
+}
+
+.project-type {
+font-size:10px;
+letter-spacing:1px;
+text-transform:uppercase;
+color:var(--mint);
+font-weight:800;
+}
+
+.project-card h3 {
+font-size:20px;
+margin:0 0 8px;
+}
+
+.project-card p {
+font-size:13px;
+color:var(--muted);
+margin:0 0 14px;
+}
+
+.project-work {
+font-size:12px;
+color:#d9e5e8;
+margin-bottom:18px;
+}
+
+.project-link {
+margin-top:auto;
+color:var(--mint);
+font-size:12px;
+font-weight:800;
+}
+
+.project-link:hover { text-decoration:underline; }
+
+.cert-grid {
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+}
+
+.cert-card h3 {
+font-size:16px;
+margin:0 0 7px;
+}
+
+.cert-card .issuer {
+color:var(--mint);
+font-size:12px;
+font-weight:700;
+}
+
+.cert-card p {
+font-size:12px;
+color:var(--muted);
+margin:10px 0 0;
+}
+
+.cert-meta {
+font-size:11px;
+color:#91a5b8;
+margin-top:9px;
+}
+
+.contact-box {
+display:grid;
+grid-template-columns:1.1fr .9fr;
+gap:25px;
+align-items:center;
+background:linear-gradient(120deg,rgba(168,230,207,.13),rgba(17,28,46,.96) 60%);
+border:1px solid rgba(168,230,207,.2);
+border-radius:28px;
+padding:35px;
+}
+
+.contact-box h2 { margin:8px 0 12px; }
+
+.contact-box p {
+color:var(--muted);
+font-size:14px;
+margin:0;
+}
+
+.contact-links {
+display:grid;
+gap:10px;
+}
+
+.contact-link {
+padding:13px 15px;
+border:1px solid var(--line);
+border-radius:12px;
+background:rgba(5,12,22,.24);
+font-size:13px;
+}
+
+.contact-link span {
+color:var(--mint);
+margin-right:8px;
+}
+
+footer {
+padding:28px 0;
+color:#8294a7;
+font-size:12px;
+text-align:center;
+}
+
+.reveal {
+opacity:0;
+transform:translateY(18px);
+transition:opacity .6s ease,transform .6s ease;
+}
+
+.reveal.visible {
+opacity:1;
+transform:none;
+}
+
+@media(max-width:850px) {
+.hero-grid,.about-grid,.contact-box {
+grid-template-columns:1fr;
+}
+
+.profile-card { max-width:440px; }
+.skills-grid { grid-template-columns:repeat(2,1fr); }
+.nav-links { gap:13px; }
+.nav-cta { display:none; }
+}
+
+@media(max-width:620px) {
+.container { width:min(100% - 30px,1120px); }
+nav { height:66px; }
+.menu-btn { display:block; }
+
+.nav-links {
+display:none;
+position:absolute;
+top:66px;
+left:0;
+right:0;
+padding:18px 22px 22px;
+background:#0d1727;
+border-bottom:1px solid var(--line);
+flex-direction:column;
+align-items:flex-start;
+}
+
+.nav-links.open { display:flex; }
+
+.hero { padding:65px 0 55px; }
+h1 { letter-spacing:-1.7px; }
+.hero-copy { font-size:15px; }
+.section { padding:58px 0; }
+.section-head { display:block; }
+.section-intro { margin-top:12px; }
+
+.focus-list,.skills-grid,.project-grid,.cert-grid {
+grid-template-columns:1fr;
+}
+
+.experience-card ul { columns:1; }
+.contact-box { padding:24px; }
+.floating-note { right:8px; }
+}
+
+@media(prefers-reduced-motion:reduce) {
+html { scroll-behavior:auto; }
+.reveal { opacity:1;transform:none;transition:none; }
+}
+</style>
 </head>
+
 <body>
-  <div class="nav-wrap">
-    <nav class="container">
-      <a class="brand" href="#home"><span class="brand-mark">NN</span><span>Nitesh Negi</span></a>
-      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
-      <div class="nav-links" id="navLinks">
-        <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a>
-        <a href="#projects">Projects</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
-      </div>
-      <a class="nav-cta" href="#contact">Let's Connect ↗</a>
-    </nav>
-  </div>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div>
-          <div class="eyebrow"><span class="pulse"></span> Digital Marketing Professional</div>
-          <h1>Growing brands with <span>strategy</span>, creativity &amp; digital skills.</h1>
-          <p class="hero-copy">Hi, I'm Nitesh Negi — a Digital Marketing Executive, SEO Specialist and WordPress Website Developer. I help businesses strengthen their online presence through website management, SEO, paid advertising and social media marketing.</p>
-          <div class="hero-actions">
-            <a class="btn" href="#projects">Explore My Work ↗</a>
-            <a class="btn secondary" href="mailto:nnegi3353@gmail.com">Contact Me</a>
-          </div>
-          <div class="hero-tags">
-            <span class="tag">WordPress &amp; WooCommerce</span><span class="tag">SEO &amp; Local SEO</span>
-            <span class="tag">Google &amp; Meta Ads</span><span class="tag">Social Media</span>
-          </div>
-        </div>
-        <aside class="profile-card">
-          <div class="avatar"><img src="assets/nitesh-negi.jpg" alt="Nitesh Negi - Digital Marketing Executive"></div>
-          <h3>Nitesh Negi</h3>
-          <p>Digital Marketing Executive · SEO Specialist · WordPress Developer</p>
-          <div class="profile-line"></div>
-          <div class="mini-stat"><span>Currently</span><strong>Mindgroom</strong></div>
-          <div class="mini-stat"><span>Experience</span><strong>Since Oct 2023</strong></div>
-          <div class="mini-stat"><span>Core focus</span><strong>Web + Marketing</strong></div>
-          <div class="mini-stat"><span>Location</span><strong>New Delhi, India</strong></div>
-          <div class="floating-note">✦ Open to professional connections</div>
-        </aside>
-      </div>
-    </section>
+<div class="nav-wrap">
+<nav class="container">
+<a class="brand" href="#home">
+<span class="brand-mark">NN</span>
+<span>Nitesh Negi</span>
+</a>
 
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-head">
-          <div><div class="kicker">A little about me</div><h2>Marketing meets website experience.</h2></div>
-          <p class="section-intro">I work across website presence, search visibility, digital campaigns and creative communication.</p>
-        </div>
-        <div class="about-grid">
-          <div class="card">
-            <p>I'm a Digital Marketing Professional with practical experience in WordPress website development and management, website page design and redesign, Search Engine Optimization, Local SEO, paid advertising and social media marketing.</p>
-            <p>At Mindgroom Career Guidance &amp; Counselling, I work on digital marketing activities across multiple websites, including SEO, website page improvements, Google Business Profile, advertising campaigns and promotional creatives.</p>
-            <p>Alongside marketing, I also build and manage WordPress websites and WooCommerce stores, combining technical website skills with a business-focused marketing approach.</p>
-          </div>
-          <div class="card">
-            <h3 style="margin:0 0 17px;font-size:17px">What I focus on</h3>
-            <div class="focus-list">
-              <div class="focus-item"><span>🌐</span>WordPress Websites</div>
-              <div class="focus-item"><span>🔍</span>SEO &amp; Local SEO</div>
-              <div class="focus-item"><span>📍</span>Google Business Profile</div>
-              <div class="focus-item"><span>📢</span>Google &amp; Meta Ads</div>
-              <div class="focus-item"><span>📱</span>Social Media Marketing</div>
-              <div class="focus-item"><span>🎨</span>Creative Designing</div>
-              <div class="focus-item"><span>🛒</span>WooCommerce</div>
-              <div class="focus-item"><span>🤖</span>AI-assisted Workflows</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
 
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="section-head">
-          <div><div class="kicker">Capabilities</div><h2>Professional skills &amp; tools.</h2></div>
-          <p class="section-intro">A practical mix of marketing, website management, creative production and productivity tools.</p>
-        </div>
-        <div class="skills-grid">
-          <div class="card skill-card"><h3>🌐 Website Development &amp; Design</h3><p>Building, managing and improving business websites.</p><div class="chips"><span class="chip">WordPress</span><span class="chip">WooCommerce</span><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">Hostinger</span><span class="chip">Website Redesign</span></div></div>
-          <div class="card skill-card"><h3>🔍 Search Engine Optimization</h3><p>Improving website structure, content and search visibility.</p><div class="chips"><span class="chip">On-Page SEO</span><span class="chip">Off-Page SEO</span><span class="chip">Technical SEO</span><span class="chip">Local SEO</span><span class="chip">Keyword Research</span><span class="chip">GMB</span></div></div>
-          <div class="card skill-card"><h3>📢 Paid Advertising</h3><p>Campaign setup, targeting and performance optimization.</p><div class="chips"><span class="chip">Google Ads</span><span class="chip">Meta Ads</span><span class="chip">Search Campaigns</span><span class="chip">Lead Generation</span></div></div>
-          <div class="card skill-card"><h3>📱 Social Media Marketing</h3><p>Managing social channels and creating engaging content.</p><div class="chips"><span class="chip">SMM</span><span class="chip">SMO</span><span class="chip">Instagram</span><span class="chip">Facebook</span><span class="chip">LinkedIn</span><span class="chip">YouTube</span></div></div>
-          <div class="card skill-card"><h3>🎨 Creative &amp; Content</h3><p>Designing marketing assets and preparing digital content.</p><div class="chips"><span class="chip">Canva</span><span class="chip">Social Creatives</span><span class="chip">Video Editing</span><span class="chip">SEO Blogs</span><span class="chip">Website Content</span></div></div>
-          <div class="card skill-card"><h3>📊 Business &amp; Reporting</h3><p>Supporting client communication and marketing operations.</p><div class="chips"><span class="chip">Client Follow-ups</span><span class="chip">B2B Support</span><span class="chip">Excel</span><span class="chip">Google Sheets</span><span class="chip">Reporting</span></div></div>
-        </div>
-        <div class="card" style="margin-top:17px">
-          <h3 style="font-size:17px;margin:0 0 8px">🧰 Tools &amp; Technologies</h3>
-          <div class="tools-group"><h3>Website &amp; Analytics</h3><div class="tool-badges"><span class="tool-badge">WordPress</span><span class="tool-badge">WooCommerce</span><span class="tool-badge">Hostinger</span><span class="tool-badge">Google Search Console</span><span class="tool-badge">Google Analytics</span><span class="tool-badge">Google Trends</span><span class="tool-badge">Google Business Profile</span><span class="tool-badge">SEMrush</span></div></div>
-          <div class="tools-group"><h3>Advertising &amp; Social</h3><div class="tool-badges"><span class="tool-badge">Google Ads</span><span class="tool-badge">Meta Ads Manager</span><span class="tool-badge">Facebook</span><span class="tool-badge">Instagram</span><span class="tool-badge">LinkedIn</span><span class="tool-badge">YouTube</span></div></div>
-          <div class="tools-group"><h3>Creative, Productivity &amp; AI</h3><div class="tool-badges"><span class="tool-badge">Canva Pro</span><span class="tool-badge">Microsoft Excel</span><span class="tool-badge">Google Sheets</span><span class="tool-badge">Google Workspace</span><span class="tool-badge">ChatGPT</span><span class="tool-badge">Google Gemini</span><span class="tool-badge">Claude</span><span class="tool-badge">Writesonic</span><span class="tool-badge">AI-assisted content tools</span></div></div>
-        </div>
-      </div>
-    </section>
+<div class="nav-links" id="navLinks">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#certifications">Certifications</a>
+<a href="#contact">Contact</a>
+</div>
 
-    <section class="section" id="experience">
-      <div class="container">
-        <div class="section-head">
-          <div><div class="kicker">Career journey</div><h2>Professional experience.</h2></div>
-          <p class="section-intro">My professional experience in digital marketing and search engine optimization.</p>
-        </div>
-        <div class="card experience">
-          <article class="experience-card">
-            <div class="exp-top"><div><h3>Digital Marketing Executive</h3><div class="exp-company">Mindgroom Career Guidance &amp; Counselling</div></div><div class="exp-date">October 2023 – Present · Full-time<br>New Delhi, India · On-site</div></div>
-            <p>Managing digital marketing activities, website page management, client communication and online business growth initiatives.</p>
-            <ul>
-              <li>WordPress website management and optimization</li><li>Website page design, updates and redesign</li><li>On-Page, Off-Page and Technical SEO</li><li>Local SEO and Google Business Profile</li><li>Keyword research and competitor analysis</li><li>Google Ads and Meta Ads activities</li><li>Social media marketing and optimization</li><li>Canva creatives and promotional graphics</li><li>Promotional video and social content editing</li><li>SEO blogs and website content</li><li>Marketing reports and sales sheets</li><li>Client communication and follow-ups</li><li>B2B sales and business development support</li><li>DMIT and Midbrain software demo coordination</li>
-            </ul>
-            <div class="work-sites"><a href="https://www.mindgroom.com/" target="_blank" rel="noopener">Mindgroom ↗</a><a href="https://thecareergalaxy.com/" target="_blank" rel="noopener">The Career Galaxy ↗</a><a href="https://dmitsoftware.in/" target="_blank" rel="noopener">DMIT Software ↗</a></div>
-          </article>
-          <article class="experience-card">
-            <div class="exp-top"><div><h3>SEO Intern</h3><div class="exp-company">Expert Training Institute</div></div><div class="exp-date">August 2023 – October 2023 · 3 Months<br>Rohini, Delhi, India · On-site</div></div>
-            <p>Completed a three-month SEO internship, gaining practical experience in search engine optimization and website optimization techniques.</p>
-            <ul><li>On-Page and Off-Page SEO</li><li>Keyword research and analysis</li><li>Backlink and link building</li><li>Google Business Profile</li><li>Website content optimization</li><li>Social media marketing</li><li>Email marketing</li><li>Google Ads fundamentals</li></ul>
-          </article>
-        </div>
-      </div>
-    </section>
+<a class="nav-cta" href="#contact">Let's Connect ↗</a>
+</nav>
+</div>
 
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="section-head">
-          <div><div class="kicker">Selected work</div><h2>Projects &amp; websites.</h2></div>
-          <p class="section-intro">A selection of professional and independent projects. My contribution varies by project and is listed on each card.</p>
-        </div>
-        <div class="project-grid">
-          <article class="card project-card"><div class="project-top"><div class="project-icon">🧠</div><span class="project-type">Mindgroom · Current role</span></div><h3>Mindgroom</h3><p>Career guidance and counselling platform offering career assessment, counselling and related services.</p><div class="project-work">My work: SEO, website page design/redesign, Local SEO, Google Business Profile, ads and social media creatives.</div><a class="project-link" href="https://www.mindgroom.com/" target="_blank" rel="noopener">Visit website ↗</a></article>
-          <article class="card project-card"><div class="project-top"><div class="project-icon">🌐</div><span class="project-type">Mindgroom · Current role</span></div><h3>The Career Galaxy</h3><p>Career guidance platform focused on career exploration, counselling and educational guidance.</p><div class="project-work">My work: SEO, website page design/redesign, Local SEO, Google Business Profile and social media marketing.</div><a class="project-link" href="https://thecareergalaxy.com/" target="_blank" rel="noopener">Visit website ↗</a></article>
-          <article class="card project-card"><div class="project-top"><div class="project-icon">💻</div><span class="project-type">Mindgroom · Current role</span></div><h3>DMIT Software</h3><p>Business website presenting DMIT software, franchise solutions, Midbrain Activation and related services.</p><div class="project-work">My work: SEO, website page design/redesign, Local SEO, Google Business Profile, ads and promotional creatives.</div><a class="project-link" href="https://dmitsoftware.in/" target="_blank" rel="noopener">Visit website ↗</a></article>
-          <article class="card project-card"><div class="project-top"><div class="project-icon">🏢</div><span class="project-type">WordPress development</span></div><h3>Bloomshades</h3><p>Corporate website for Bloomshades Management Services Pvt. Ltd., presenting staffing and workforce solutions.</p><div class="project-work">My work: WordPress website development, page layouts, customization, service pages, career and contact pages.</div><a class="project-link" href="https://bloomshades.co.in/" target="_blank" rel="noopener">Visit website ↗</a></article>
-          <article class="card project-card"><div class="project-top"><div class="project-icon">🛒</div><span class="project-type">WooCommerce</span></div><h3>Meal2Heal</h3><p>WordPress and WooCommerce online store with product and payment functionality.</p><div class="project-work">My work: WooCommerce setup, Cashfree payment gateway integration, product/store management and free shipping configuration above ₹599.</div><a class="project-link" href="https://meal2heal.co.in/" target="_blank" rel="noopener">Visit website ↗</a></article>
-          <article class="card project-card"><div class="project-top"><div class="project-icon">📈</div><span class="project-type">WordPress + Marketing</span></div><h3>eWorkHive</h3><p>Business website project built using WordPress to support its online presence.</p><div class="project-work">My work: WordPress website work, social media support and Google Business Profile management.</div><a class="project-link" href="https://eworkhive.in/" target="_blank" rel="noopener">Visit website ↗</a></article>
-          <article class="card project-card"><div class="project-top"><div class="project-icon">🔍</div><span class="project-type">Off-Page SEO · Australia</span></div><h3>365 Pest Control</h3><p>SEO project for an Australian pest control business, focused on supporting online presence and search visibility.</p><div class="project-work">My work: Off-Page SEO, backlink research and link-building activities.</div><a class="project-link" href="https://365pestcontrol.com.au/" target="_blank" rel="noopener">Visit website ↗</a></article>
-          <article class="card project-card"><div class="project-top"><div class="project-icon">🎨</div><span class="project-type">Website project</span></div><h3>King Creation</h3><p>Website project showcasing practical experience in website creation and online brand presentation.</p><div class="project-work">Project focus: Website development, design customization and content presentation.</div><span class="project-link">Project details available on request</span></article>
-        </div>
-      </div>
-    </section>
+<main>
 
-    <section class="section" id="certifications">
-      <div class="container">
-        <div class="section-head">
-          <div><div class="kicker">Learning &amp; credentials</div><h2>Certifications.</h2></div>
-          <p class="section-intro">Four digital marketing certifications and training credentials.</p>
-        </div>
-        <div class="cert-grid">
-          <article class="card cert-card"><h3>Digital Marketing Certification</h3><div class="issuer">HubSpot Academy</div><div class="cert-meta">Issued September 2026 · Expires October 2028<br>Credential ID: a27a43ef12c94df7a7ab066bdbe4178e</div><p>SEO-friendly content, website optimization, social media strategy, video marketing, advertising and campaign measurement.</p></article>
-          <article class="card cert-card"><h3>Google Ads Search Certification</h3><div class="issuer">Google</div><div class="cert-meta">Issued September 2026 · Expires September 2027<br>Credential ID: 195023219</div><p>Search campaign setup, keyword targeting, ad creation, bidding and performance optimization.</p></article>
-          <article class="card cert-card"><h3>Digital Marketing Internship Certificate</h3><div class="issuer">Expert Training Institute</div><div class="cert-meta">Issued August 2023 · 3-month internship</div><p>Practical training in SEO, social media marketing, Google Business Profile, email marketing and paid advertising.</p></article>
-          <article class="card cert-card"><h3>Digital Marketing Course Certificate</h3><div class="issuer">Expert Training Institute</div><div class="cert-meta">Issued April 2023</div><p>Training in digital marketing fundamentals, SEO, social media marketing and Google Business Profile.</p></article>
-        </div>
-      </div>
-    </section>
+<section class="hero" id="home">
+<div class="container hero-grid">
 
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="contact-box">
-          <div><div class="kicker">Let's work together</div><h2>Have a project or opportunity in mind?</h2><p>I'm always interested in connecting with professionals, exploring opportunities and collaborating on digital projects. Feel free to reach out.</p><div style="margin-top:22px"><a class="btn" href="mailto:nnegi3353@gmail.com">Send me an email ↗</a></div></div>
-          <div class="contact-links">
-            <a class="contact-link" href="mailto:nnegi3353@gmail.com"><span>✉</span> nnegi3353@gmail.com</a>
-            <a class="contact-link" href="https://www.linkedin.com/in/nitesh-negi-digitalmarketing/" target="_blank" rel="noopener"><span>in</span> LinkedIn Profile ↗</a>
-            <a class="contact-link" href="https://github.com/nitesh-negi-digitalmarketing" target="_blank" rel="noopener"><span>⌘</span> GitHub Profile ↗</a>
-            <div class="contact-link"><span>⌖</span> New Delhi, India</div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer><div class="container">© <span id="year"></span> Nitesh Negi. Designed with purpose and built for the web.</div></footer>
+<div>
+<div class="eyebrow">
+<span class="pulse"></span>
+Digital Marketing Professional
+</div>
 
-  <script>
-    const menuBtn=document.getElementById('menuBtn');
-    const navLinks=document.getElementById('navLinks');
-    menuBtn.addEventListener('click',()=>navLinks.classList.toggle('open'));
-    navLinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>navLinks.classList.remove('open')));
-    document.getElementById('year').textContent=new Date().getFullYear();
-    const observer=new IntersectionObserver(entries=>{
-      entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}});
-    },{threshold:.08});
-    document.querySelectorAll('.card,.profile-card,.section-head').forEach(el=>{el.classList.add('reveal');observer.observe(el)});
-  </script>
+<h1>Growing brands with <span>strategy</span>, creativity &amp; digital skills.</h1>
+
+<p class="hero-copy">
+Hi, I'm Nitesh Negi — a Digital Marketing Executive, SEO Specialist and WordPress Website Developer. I help businesses strengthen their online presence through website management, SEO, paid advertising and social media marketing.
+</p>
+
+<div class="hero-actions">
+<a class="btn" href="#projects">Explore My Work ↗</a>
+<a class="btn secondary" href="mailto:nnegi3353@gmail.com">Contact Me</a>
+</div>
+
+<div class="hero-tags">
+<span class="tag">WordPress &amp; WooCommerce</span>
+<span class="tag">SEO &amp; Local SEO</span>
+<span class="tag">Google &amp; Meta Ads</span>
+<span class="tag">Social Media</span>
+</div>
+</div>
+
+<aside class="profile-card">
+
+<div class="avatar">
+<img
+src="./assets/nitesh-negi.jpg"
+alt="Nitesh Negi - Digital Marketing Executive"
+onerror="this.style.display='none';document.getElementById('avatarFallback').style.display='grid';"
+>
+<span class="avatar-fallback" id="avatarFallback">NN</span>
+</div>
+
+<h3>Nitesh Negi</h3>
+<p>Digital Marketing Executive · SEO Specialist · WordPress Developer</p>
+
+<div class="profile-line"></div>
+
+<div class="mini-stat"><span>Currently</span><strong>Mindgroom</strong></div>
+<div class="mini-stat"><span>Experience</span><strong>Since Oct 2023</strong></div>
+<div class="mini-stat"><span>Core focus</span><strong>Web + Marketing</strong></div>
+<div class="mini-stat"><span>Location</span><strong>New Delhi, India</strong></div>
+
+<div class="floating-note">✦ Open to professional connections</div>
+</aside>
+
+</div>
+</section>
+
+<section class="section" id="about">
+<div class="container">
+
+<div class="section-head">
+<div>
+<div class="kicker">A little about me</div>
+<h2>Marketing meets website experience.</h2>
+</div>
+<p class="section-intro">I work across website presence, search visibility, digital campaigns and creative communication.</p>
+</div>
+
+<div class="about-grid">
+
+<div class="card">
+<p>I'm a Digital Marketing Professional with practical experience in WordPress website development and management, website page design and redesign, Search Engine Optimization, Local SEO, paid advertising and social media marketing.</p>
+
+<p>At Mindgroom Career Guidance &amp; Counselling, I work on digital marketing activities across multiple websites, including SEO, website page improvements, Google Business Profile, advertising campaigns and promotional creatives.</p>
+
+<p>Alongside marketing, I also build and manage WordPress websites and WooCommerce stores, combining technical website skills with a business-focused marketing approach.</p>
+</div>
+
+<div class="card">
+<h3 style="margin:0 0 17px;font-size:17px">What I focus on</h3>
+
+<div class="focus-list">
+<div class="focus-item"><span>🌐</span>WordPress Websites</div>
+<div class="focus-item"><span>🔍</span>SEO &amp; Local SEO</div>
+<div class="focus-item"><span>📍</span>Google Business Profile</div>
+<div class="focus-item"><span>📢</span>Google &amp; Meta Ads</div>
+<div class="focus-item"><span>📱</span>Social Media Marketing</div>
+<div class="focus-item"><span>🎨</span>Creative Designing</div>
+<div class="focus-item"><span>🛒</span>WooCommerce</div>
+<div class="focus-item"><span>🤖</span>AI-assisted Workflows</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section" id="skills">
+<div class="container">
+
+<div class="section-head">
+<div>
+<div class="kicker">Capabilities</div>
+<h2>Professional skills &amp; tools.</h2>
+</div>
+<p class="section-intro">A practical mix of marketing, website management, creative production and productivity tools.</p>
+</div>
+
+<div class="skills-grid">
+
+<div class="card skill-card">
+<h3>🌐 Website Development &amp; Design</h3>
+<p>Building, managing and improving business websites.</p>
+<div class="chips">
+<span class="chip">WordPress</span><span class="chip">WooCommerce</span><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">Hostinger</span><span class="chip">Website Redesign</span>
+</div>
+</div>
+
+<div class="card skill-card">
+<h3>🔍 Search Engine Optimization</h3>
+<p>Improving website structure, content and search visibility.</p>
+<div class="chips">
+<span class="chip">On-Page SEO</span><span class="chip">Off-Page SEO</span><span class="chip">Technical SEO</span><span class="chip">Local SEO</span><span class="chip">Keyword Research</span><span class="chip">GMB</span>
+</div>
+</div>
+
+<div class="card skill-card">
+<h3>📢 Paid Advertising</h3>
+<p>Campaign setup, targeting and performance optimization.</p>
+<div class="chips">
+<span class="chip">Google Ads</span><span class="chip">Meta Ads</span><span class="chip">Search Campaigns</span><span class="chip">Lead Generation</span>
+</div>
+</div>
+
+<div class="card skill-card">
+<h3>📱 Social Media Marketing</h3>
+<p>Managing social channels and creating engaging content.</p>
+<div class="chips">
+<span class="chip">SMM</span><span class="chip">SMO</span><span class="chip">Instagram</span><span class="chip">Facebook</span><span class="chip">LinkedIn</span><span class="chip">YouTube</span>
+</div>
+</div>
+
+<div class="card skill-card">
+<h3>🎨 Creative &amp; Content</h3>
+<p>Designing marketing assets and preparing digital content.</p>
+<div class="chips">
+<span class="chip">Canva</span><span class="chip">Social Creatives</span><span class="chip">Video Editing</span><span class="chip">SEO Blogs</span><span class="chip">Website Content</span>
+</div>
+</div>
+
+<div class="card skill-card">
+<h3>📊 Business &amp; Reporting</h3>
+<p>Supporting client communication and marketing operations.</p>
+<div class="chips">
+<span class="chip">Client Follow-ups</span><span class="chip">B2B Support</span><span class="chip">Excel</span><span class="chip">Google Sheets</span><span class="chip">Reporting</span>
+</div>
+</div>
+
+</div>
+
+<div class="card" style="margin-top:17px">
+<h3 style="font-size:17px;margin:0 0 8px">🧰 Tools &amp; Technologies</h3>
+
+<div class="tools-group">
+<h3>Website &amp; Analytics</h3>
+<div class="tool-badges">
+<span class="tool-badge">WordPress</span><span class="tool-badge">WooCommerce</span><span class="tool-badge">Hostinger</span><span class="tool-badge">Google Search Console</span><span class="tool-badge">Google Analytics</span><span class="tool-badge">Google Trends</span><span class="tool-badge">Google Business Profile</span><span class="tool-badge">SEMrush</span>
+</div>
+</div>
+
+<div class="tools-group">
+<h3>Advertising &amp; Social</h3>
+<div class="tool-badges">
+<span class="tool-badge">Google Ads</span><span class="tool-badge">Meta Ads Manager</span><span class="tool-badge">Facebook</span><span class="tool-badge">Instagram</span><span class="tool-badge">LinkedIn</span><span class="tool-badge">YouTube</span>
+</div>
+</div>
+
+<div class="tools-group">
+<h3>Creative, Productivity &amp; AI</h3>
+<div class="tool-badges">
+<span class="tool-badge">Canva Pro</span><span class="tool-badge">Microsoft Excel</span><span class="tool-badge">Google Sheets</span><span class="tool-badge">Google Workspace</span><span class="tool-badge">ChatGPT</span><span class="tool-badge">Google Gemini</span><span class="tool-badge">Claude</span><span class="tool-badge">Writesonic</span><span class="tool-badge">AI-assisted content tools</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="experience">
+<div class="container">
+
+<div class="section-head">
+<div>
+<div class="kicker">Career journey</div>
+<h2>Professional experience.</h2>
+</div>
+<p class="section-intro">My professional experience in digital marketing and search engine optimization.</p>
+</div>
+
+<div class="card experience">
+
+<article class="experience-card">
+<div class="exp-top">
+<div>
+<h3>Digital Marketing Executive</h3>
+<div class="exp-company">Mindgroom Career Guidance &amp; Counselling</div>
+</div>
+<div class="exp-date">October 2023 – Present · Full-time<br>New Delhi, India · On-site</div>
+</div>
+
+<p>Managing digital marketing activities, website page management, client communication and online business growth initiatives.</p>
+
+<ul>
+<li>WordPress website management and optimization</li>
+<li>Website page design, updates and redesign</li>
+<li>On-Page, Off-Page and Technical SEO</li>
+<li>Local SEO and Google Business Profile</li>
+<li>Keyword research and competitor analysis</li>
+<li>Google Ads and Meta Ads activities</li>
+<li>Social media marketing and optimization</li>
+<li>Canva creatives and promotional graphics</li>
+<li>Promotional video and social content editing</li>
+<li>SEO blogs and website content</li>
+<li>Marketing reports and sales sheets</li>
+<li>Client communication and follow-ups</li>
+<li>B2B sales and business development support</li>
+<li>DMIT and Midbrain software demo coordination</li>
+</ul>
+
+<div class="work-sites">
+<a href="https://www.mindgroom.com/" target="_blank" rel="noopener">Mindgroom ↗</a>
+<a href="https://thecareergalaxy.com/" target="_blank" rel="noopener">The Career Galaxy ↗</a>
+<a href="https://dmitsoftware.in/" target="_blank" rel="noopener">DMIT Software ↗</a>
+</div>
+</article>
+
+<article class="experience-card">
+<div class="exp-top">
+<div>
+<h3>SEO Intern</h3>
+<div class="exp-company">Expert Training Institute</div>
+</div>
+<div class="exp-date">August 2023 – October 2023 · 3 Months<br>Rohini, Delhi, India · On-site</div>
+</div>
+
+<p>Completed a three-month SEO internship, gaining practical experience in search engine optimization and website optimization techniques.</p>
+
+<ul>
+<li>On-Page and Off-Page SEO</li>
+<li>Keyword research and analysis</li>
+<li>Backlink and link building</li>
+<li>Google Business Profile</li>
+<li>Website content optimization</li>
+<li>Social media marketing</li>
+<li>Email marketing</li>
+<li>Google Ads fundamentals</li>
+</ul>
+</article>
+
+</div>
+</div>
+</section>
+
+<section class="section" id="projects">
+<div class="container">
+
+<div class="section-head">
+<div>
+<div class="kicker">Selected work</div>
+<h2>Projects &amp; websites.</h2>
+</div>
+<p class="section-intro">A selection of professional and independent projects. My contribution varies by project and is listed on each card.</p>
+</div>
+
+<div class="project-grid">
+
+<article class="card project-card">
+<div class="project-top"><div class="project-icon">🧠</div><span class="project-type">Mindgroom · Current role</span></div>
+<h3>Mindgroom</h3>
+<p>Career guidance and counselling platform offering career assessment, counselling and related services.</p>
+<div class="project-work">My work: SEO, website page design/redesign, Local SEO, Google Business Profile, ads and social media creatives.</div>
+<a class="project-link" href="https://www.mindgroom.com/" target="_blank" rel="noopener">Visit website ↗</a>
+</article>
+
+<article class="card project-card">
+<div class="project-top"><div class="project-icon">🌐</div><span class="project-type">Mindgroom · Current role</span></div>
+<h3>The Career Galaxy</h3>
+<p>Career guidance platform focused on career exploration, counselling and educational guidance.</p>
+<div class="project-work">My work: SEO, website page design/redesign, Local SEO, Google Business Profile and social media marketing.</div>
+<a class="project-link" href="https://thecareergalaxy.com/" target="_blank" rel="noopener">Visit website ↗</a>
+</article>
+
+<article class="card project-card">
+<div class="project-top"><div class="project-icon">💻</div><span class="project-type">Mindgroom · Current role</span></div>
+<h3>DMIT Software</h3>
+<p>Business website presenting DMIT software, franchise solutions, Midbrain Activation and related services.</p>
+<div class="project-work">My work: SEO, website page design/redesign, Local SEO, Google Business Profile, ads and promotional creatives.</div>
+<a class="project-link" href="https://dmitsoftware.in/" target="_blank" rel="noopener">Visit website ↗</a>
+</article>
+
+<article class="card project-card">
+<div class="project-top"><div class="project-icon">🏢</div><span class="project-type">WordPress development</span></div>
+<h3>Bloomshades</h3>
+<p>Corporate website for Bloomshades Management Services Pvt. Ltd., presenting staffing and workforce solutions.</p>
+<div class="project-work">My work: WordPress website development, page layouts, customization, service pages, career and contact pages.</div>
+<a class="project-link" href="https://bloomshades.co.in/" target="_blank" rel="noopener">Visit website ↗</a>
+</article>
+
+<article class="card project-card">
+<div class="project-top"><div class="project-icon">🛒</div><span class="project-type">WooCommerce</span></div>
+<h3>Meal2Heal</h3>
+<p>WordPress and WooCommerce online store with product and payment functionality.</p>
+<div class="project-work">My work: WooCommerce setup, Cashfree payment gateway integration, product/store management and free shipping configuration above ₹599.</div>
+<a class="project-link" href="https://meal2heal.co.in/" target="_blank" rel="noopener">Visit website ↗</a>
+</article>
+
+<article class="card project-card">
+<div class="project-top"><div class="project-icon">📈</div><span class="project-type">WordPress + Marketing</span></div>
+<h3>eWorkHive</h3>
+<p>Business website project built using WordPress to support its online presence.</p>
+<div class="project-work">My work: WordPress website work, social media support and Google Business Profile management.</div>
+<a class="project-link" href="https://eworkhive.in/" target="_blank" rel="noopener">Visit website ↗</a>
+</article>
+
+<article class="card project-card">
+<div class="project-top"><div class="project-icon">🔍</div><span class="project-type">Off-Page SEO · Australia</span></div>
+<h3>365 Pest Control</h3>
+<p>SEO project for an Australian pest control business, focused on supporting online presence and search visibility.</p>
+<div class="project-work">My work: Off-Page SEO, backlink research and link-building activities.</div>
+<a class="project-link" href="https://365pestcontrol.com.au/" target="_blank" rel="noopener">Visit website ↗</a>
+</article>
+
+<article class="card project-card">
+<div class="project-top"><div class="project-icon">🎨</div><span class="project-type">Website project</span></div>
+<h3>King Creation</h3>
+<p>Website project showcasing practical experience in website creation and online brand presentation.</p>
+<div class="project-work">Project focus: Website development, design customization and content presentation.</div>
+<span class="project-link">Project details available on request</span>
+</article>
+
+</div>
+</div>
+</section>
+
+<section class="section" id="certifications">
+<div class="container">
+
+<div class="section-head">
+<div>
+<div class="kicker">Learning &amp; credentials</div>
+<h2>Certifications.</h2>
+</div>
+<p class="section-intro">Four digital marketing certifications and training credentials.</p>
+</div>
+
+<div class="cert-grid">
+
+<article class="card cert-card">
+<h3>Digital Marketing Certification</h3>
+<div class="issuer">HubSpot Academy</div>
+<div class="cert-meta">Issued September 2026 · Expires October 2028<br>Credential ID: a27a43ef12c94df7a7ab066bdbe4178e</div>
+<p>SEO-friendly content, website optimization, social media strategy, video marketing, advertising and campaign measurement.</p>
+</article>
+
+<article class="card cert-card">
+<h3>Google Ads Search Certification</h3>
+<div class="issuer">Google</div>
+<div class="cert-meta">Issued September 2026 · Expires September 2027<br>Credential ID: 195023219</div>
+<p>Search campaign setup, keyword targeting, ad creation, bidding and performance optimization.</p>
+</article>
+
+<article class="card cert-card">
+<h3>Digital Marketing Internship Certificate</h3>
+<div class="issuer">Expert Training Institute</div>
+<div class="cert-meta">Issued August 2023 · 3-month internship</div>
+<p>Practical training in SEO, social media marketing, Google Business Profile, email marketing and paid advertising.</p>
+</article>
+
+<article class="card cert-card">
+<h3>Digital Marketing Course Certificate</h3>
+<div class="issuer">Expert Training Institute</div>
+<div class="cert-meta">Issued April 2023</div>
+<p>Training in digital marketing fundamentals, SEO, social media marketing and Google Business Profile.</p>
+</article>
+
+</div>
+</div>
+</section>
+
+<section class="section" id="contact">
+<div class="container">
+
+<div class="contact-box">
+
+<div>
+<div class="kicker">Let's work together</div>
+<h2>Have a project or opportunity in mind?</h2>
+<p>I'm always interested in connecting with professionals, exploring opportunities and collaborating on digital projects. Feel free to reach out.</p>
+
+<div style="margin-top:22px">
+<a class="btn" href="mailto:nnegi3353@gmail.com">Send me an email ↗</a>
+</div>
+</div>
+
+<div class="contact-links">
+<a class="contact-link" href="mailto:nnegi3353@gmail.com"><span>✉</span> nnegi3353@gmail.com</a>
+
+<a class="contact-link" href="https://www.linkedin.com/in/nitesh-negi-digitalmarketing/" target="_blank" rel="noopener"><span>in</span> LinkedIn Profile ↗</a>
+
+<a class="contact-link" href="https://github.com/nitesh-negi-digitalmarketing" target="_blank" rel="noopener"><span>⌘</span> GitHub Profile ↗</a>
+
+<div class="contact-link"><span>⌖</span> New Delhi, India</div>
+</div>
+
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="container">
+© <span id="year"></span> Nitesh Negi. Designed with purpose and built for the web.
+</div>
+</footer>
+
+<script>
+const menuBtn = document.getElementById('menuBtn');
+const navLinks = document.getElementById('navLinks');
+
+menuBtn.addEventListener('click', () => {
+navLinks.classList.toggle('open');
+});
+
+navLinks.querySelectorAll('a').forEach(link => {
+link.addEventListener('click', () => {
+navLinks.classList.remove('open');
+});
+});
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+if ('IntersectionObserver' in window) {
+const observer = new IntersectionObserver(entries => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.classList.add('visible');
+observer.unobserve(entry.target);
+}
+});
+}, {threshold:0.08});
+
+document.querySelectorAll('.card,.profile-card,.section-head').forEach(el => {
+el.classList.add('reveal');
+observer.observe(el);
+});
+} else {
+document.querySelectorAll('.card,.profile-card,.section-head').forEach(el => {
+el.classList.add('visible');
+});
+}
+</script>
+
 </body>
 </html>
