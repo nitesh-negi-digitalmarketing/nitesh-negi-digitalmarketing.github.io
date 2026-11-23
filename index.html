@@ -703,7 +703,20 @@ grid-template-columns:1fr;
 
 .experience-card ul { columns:1; }
 .contact-box { padding:24px; }
-.floating-note { right:8px; }
+
+/* Mobile floating badge fix */
+.floating-note {
+position:static;
+display:inline-flex;
+align-items:center;
+max-width:100%;
+width:fit-content;
+margin-top:18px;
+padding:11px 14px;
+white-space:normal;
+line-height:1.5;
+font-size:12px;
+}
 }
 
 @media(prefers-reduced-motion:reduce) {
@@ -771,7 +784,6 @@ Hi, I'm Nitesh Negi — a Digital Marketing Executive, SEO Specialist and WordPr
 
 <div class="avatar">
 <img
-
 src="https://raw.githubusercontent.com/nitesh-negi-digitalmarketing/nitesh-negi-digitalmarketing.github.io/main/nitesh-negi.jpg"
 alt="Nitesh Negi - Digital Marketing Executive"
 onerror="this.style.display='none';document.getElementById('avatarFallback').style.display='grid';"
