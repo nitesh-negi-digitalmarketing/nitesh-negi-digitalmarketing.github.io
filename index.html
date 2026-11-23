@@ -282,16 +282,22 @@ color:var(--text);
 text-align:right;
 }
 
+/* Badge stays below Location on desktop and mobile */
 .floating-note {
-position:absolute;
-right:-18px;
-bottom:28px;
+position:static;
+display:inline-flex;
+align-items:center;
+max-width:100%;
+width:fit-content;
+margin-top:18px;
 background:#e9fff5;
 color:#10221f;
 border-radius:15px;
 padding:12px 15px;
 font-size:12px;
 font-weight:800;
+line-height:1.5;
+white-space:normal;
 box-shadow:var(--shadow);
 }
 
@@ -703,20 +709,6 @@ grid-template-columns:1fr;
 
 .experience-card ul { columns:1; }
 .contact-box { padding:24px; }
-
-/* Mobile floating badge fix */
-.floating-note {
-position:static;
-display:inline-flex;
-align-items:center;
-max-width:100%;
-width:fit-content;
-margin-top:18px;
-padding:11px 14px;
-white-space:normal;
-line-height:1.5;
-font-size:12px;
-}
 }
 
 @media(prefers-reduced-motion:reduce) {
